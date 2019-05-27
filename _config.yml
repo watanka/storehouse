@@ -18,7 +18,7 @@ description: >
 copyright: accent
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
-intro: false         # Tip: Remove the span from site_heading if intro is set to true
+intro:    true   # Tip: Remove the span from site_heading if intro is set to true
 # This will be displayed in your intro
 short_bio: >
     This is a daily record of my progress on becoming a data scientist. If you pursue a similar path or interested in data science, I hope this blog to be helpful to you.
@@ -47,7 +47,7 @@ favicon_location: "images/favicon.ico"
 profile_picture: images/temp.png
 paginate: 5
 paginate_path: "/page/:num"
-tracking_id: UA-69243698-7 # GA Tracking ID
+tracking_id:  UA-140877810-1
 
 # Social Stuff | open graph and twitter cards
 og_image: "images/accent.png" # This will show in facebook thumbnails
