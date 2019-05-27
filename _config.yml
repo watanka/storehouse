@@ -1,8 +1,8 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+title: Silvercityz Storehouse
+description: about problems in the world
+author: Eunsung Shin
+github: https://github.com/watanka
+about: I'm a statistician/ programmar in python and R.
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 avatar_url: /static/img/avatar.jpg
@@ -16,16 +16,8 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
+      link: "https://github.com/watanka"
 
 share:
   twitter_username: github.io
