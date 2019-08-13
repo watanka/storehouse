@@ -1,0 +1,111 @@
+07/12
+-xception acc, val_acc 체크
+
+-confusion matrix에 들어갈 validation data 
+랜덤 추출
+
+-데이터 라벨 별 균등하게 배치에 들어갈 수 있도록 data loader 코드 수정
+
+-xception 말고 다른 모델 시도
+  -ResNet사용
+07/15
+-optimizer adam-> SGD 변경 적용
+-ImageDataGenerator 사용
+-ResNet 이해
+
+
+07/16
+
+ResNet50 SGD 추가학습 완료
+step 18
+최대 acc: 94.6% w/ 93.72% val acc  
+step23
+최대 val acc: 94.12% w/ 93.7% accuracy 
+
+
+-VGG19 모델 체크
+-데이터 균등하게 넣기 -> 데이터 수량 반비례 라벨 웨이트 적용
+-confusion matrix validation set 조정 코드수정
+
+-11:30 gpu 사용시 agit에 기재
+
+-VGG모델 학습 cm 적용
+
+-흑백 이미지 추출  (07-17 다시 실시)
+
+-train, val 폴더 나눠서 imagedatagenerator 적용
+
+07/17
+-PuTTY local SSH provider
+-label3 개인정보 & label6 수리중 사진 혼동
+정확도를 올리기 위해서 상대적으로 많은 0번 6번 라벨 이미지 만장씩으로 줄이고, 적은 1번 3번 augmentation으로 이미지 장수 추가
+
+-relabel: 1_신분증 ->3_개인정보로 통합
+-oop
+-volatile gpu utilization-% of activated gpu
+low vgu may indicate bottleneck
+
+-CUDA
+-Fine Tuning
+
+-모델 설치시 venv 사용 (어케?)
+
+venv modules -> global
+
+0718
+Fine Tune
+-> 데이터 추가 
+학습한 모델로 1차 분류 실시
+
+-DenseNet rmsprop으로 추가학습 (fine tuning?)
+
+-Optimizer 종류 
+BGD
+SGD
+Momentum
+Adagrad
+Nesterov Accelerated Gradient(NAG)
+rmsprop
+Adam =
+
+가상환경에 모듈 옮기기
+conda env export
+
+0719
+도커 개념
+
+[::n] n번씩 띄어서 추출
+
+0722
+141 eunsung/0702분류/1_신분증에 이미지 추가
+37장
+가상환경 구성
+웹크롤링 실시 x
+cv2 패키지 이해
+
+0730
+overfitting 문제 해결 시도중
+1. 데이터 수, 다양성을 늘리는 방법
+2. 모델이 트레이닝 데이터를 기억하는 정도를 낮추는 방법
+- 비교적 단순한 모델인 DenseNet 선택
+-Dropout 섞어보기
+
+batch_size, 
+
+
+0801 복사본 사진들 제거
+불량 오인식 요소
+-초점
+-빛
+-오물
+
+차 o - 
+차 x - 
+
+08/06
+.py 파일 모듈로 사용하기
+InceptionV4모델
+
+08/07
+-Inference 데이터값
+-ThreadPoolExecutor 쓰레드 풀이 무엇인지
